@@ -1,0 +1,23 @@
+<nav class="navbar-container">
+  <div class="navbar-user-links">
+    <% if current_user %>
+      <%#= link_to current_user.email %>
+      <i class="fa-regular fa-circle-user"></i>
+      <%= button_to "Log out", destroy_user_session_path, method: :delete, class: "logout-button" %>
+    <% else %>
+      <%= button_to "Log In", new_user_session_path, class: "login-button" %>
+      <%= link_to "Sign Up", new_user_registration_path, class: "signup-button" %>
+    <% end %>
+  </div>
+
+  <div class="navbar-brand-container">
+    <%= link_to "THE GLOBAL JOURNAL", root_path, class: "navbar-brand" %>
+  </div>
+
+  <div>
+    <span>Home</span> |
+    <span>Business</span> |
+    <span>Tech</span> |
+    <span>Opinions</span>
+  </div>
+</nav>
