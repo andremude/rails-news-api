@@ -1,0 +1,44 @@
+<div class="index-container">
+  <div class="frontpage-headlines">
+    <%= render 'top_article' %>
+  </div>
+
+  <h2>Business</h2>
+  <div class="articles-container">
+    <%#= render 'business_article' %>
+  </div>
+
+  <h2>Technology</h2>
+  <div class="articles-container">
+    <%#= render 'tech_article' %>
+  </div>
+
+  <h2>Opinions</h2>
+  <div class="opinions-container">
+    <div class="opinion-container">
+      <%= image_tag("avatar1.jpg", alt: "avatar", class:"opinion-avatar") %>
+      <div>
+        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tristique felis ac magna pulvinar mollis.</p>
+      </div>
+      <span class="exclusive-btn"><i class="fa-solid fa-star" style="color: #f9e71a;"></i> exclusive</span>
+    </div>
+    <div class="opinion-container">
+      <%= image_tag("avatar2.jpg", alt: "avatar", class:"opinion-avatar") %>
+      <div>
+        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tristique felis ac magna pulvinar mollis.</p>
+      </div>
+      <span class="exclusive-btn"><i class="fa-solid fa-star" style="color: #f9e71a;"></i> exclusive</span>
+    </div>
+    <div class="opinion-container">
+      <%= image_tag("avatar3.jpg", alt: "avatar", class:"opinion-avatar") %>
+      <div>
+        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tristique felis ac magna pulvinar mollis.</p>
+      </div>
+      <span class="exclusive-btn"><i class="fa-solid fa-star" style="color: #f9e71a;"></i> exclusive</span>
+    </div>
+  </div>
+
+</div>
