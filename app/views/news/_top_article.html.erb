@@ -1,0 +1,13 @@
+<% @top_articles.each_with_index do |article, article_key| %>
+  <div class="fp-article fp-article--<%= article_key + 1 %>">
+    <div class="article article--<%= article_key + 1 %>" id="article-<%= article_key+ 1 %>">
+      <span class="article-title article-title-<%= article_key +1 %>">
+        <%= article['title'] %>
+      </span>
+      <div class="article-body card-body-<%= article_key + 1 %>">
+        <p class="article-description-<%= article_key + 1 %>"><%= article['description'] %></p>
+      </div>
+      <%= image_tag(article['urlToImage'] || @no_image) %>
+    </div>
+  </div>
+<% end %>

@@ -1,0 +1,89 @@
+.article img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+#article-1 {
+  display: flex;
+  flex-direction: column;
+  min-width: 500px;
+}
+
+.article-title-1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.6em;
+  font-weight: bold;
+}
+
+.article-description-1 {
+  text-align: justify;
+}
+
+#article-1 img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+#article-2,
+#article-3,
+#article-4 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  min-width: 300px;
+  max-width: 320px;
+  min-height: 160px;
+  max-height: 170px;
+  align-items: center;
+  padding: 2px 10px;
+  padding: 2px 10px;
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+}
+
+#article-2 img,
+#article-3 img,
+#article-4 img {
+  width: 35%;
+  height: 110px;
+  object-fit: cover;
+}
+
+.article-title-2,
+.article-title-3,
+.article-title-4 {
+  display: flex;
+  align-items: center;
+  width: 60%;
+  max-width: 60%;
+  height: 110px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+
+.card-body-2,
+.card-body-3,
+.card-body-4 {
+  display: none;
+}
+
+.fp-article:nth-child(n+5) {
+  margin-bottom: 20px;
+}
+
+.fp-article:nth-child(n+5) .article {
+  padding: 4px 8px;
+}
+
+.fp-article:nth-child(n+5) .article-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+}
+
+.fp-article:nth-child(n+5) img {
+  display: none;
+}
